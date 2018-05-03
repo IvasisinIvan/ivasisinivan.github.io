@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <header>
+                <img id=logo src="HTML5-Logo.png" alt="logo">
+            </header>
+
+            <div class=menu>
+                <a href="index.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+
+            </div>
+        </nav>
+
+
+        <div id="myModel" class="modal">
+<div class="modal-content"> 
+    <span class="close">&times;</span>
+<div>
+        <h1 id="products"> </h1>
+        <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Adresa:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter adresa">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Telefon:</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Telefon">
+                </div>
+              
+                <button type="submit" id="btnBay" class="btn btn-primary">Submit</button>
+              </form>
+</div>
+</div>
+        </div>
+
+        <div class="bla row">
+
+            <div class="  col-4">
+                <ul>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="1.jpg" alt="photo">
+                        <h2>HTML, CSS and JavaScript</h2>
+                        <p>200 lei</p>
+                        <button  onclick="bay('HTML, CSS and JavaScript, Pret: 200 lei')" class="  btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="4.jpg" alt="photo">
+                        <h1>HTML5 and CSS3</h1>
+                        <p>150 lei</p>
+                        <button  onclick="bay('HTML5 and CSS3, Pret: 150 lei')" class="myBtn btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="2.jpg" alt="photo">
+                        <h1>HTML&CSS</h1>
+                        <br>
+                        <p>100 lei</p>
+                        <button  onclick="bay('HTML&CSS, Pret: 100 lei')" class="myBtn btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="5.jpg" alt="photo">
+                        <h1>Full Stack Web Development</h1>
+                        <p>100 lei</p>
+                        <button  onclick="bay('Full Stack Web Development, Pret: 100 lei')" class="myBtn btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <ul>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="3.jpg" alt="photo">
+                        <h2>Computer Programming </h2>
+                        <p>100 lei</p>
+                        <button  onclick="bay('Computer Programming , Pret: 100 lei')" class="myBtn btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="bord">
+                        <img class="img-responsive photos" src="6.jpg" alt="photo">
+                        <h1>Pro HTML5 Games</h1>
+                        <p>100 lei</p>
+                        <button  onclick="bay('Pro HTML5 Games, Pret: 100 lei')" class="myBtn btn btn-primary">Buy</button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
