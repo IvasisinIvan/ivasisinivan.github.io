@@ -1,6 +1,6 @@
 <?
 if (array_key_exists('messageFF', $_POST)) {
-   $to = 'alexandr.pavlov@outlook.com';
+   $to = 'ivasisin.ivan@gmail.com';
    $subject = 'Forma de contact a fost indeplinita de pe '.$_SERVER['HTTP_REFERER'];
    $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
    $message = "Nume: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nMesaj: ".$_POST['messageFF'];
