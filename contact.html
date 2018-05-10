@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <header>
+                <img id=logo src="HTML5-Logo.png" alt="logo">
+            </header>
+
+            <div class=menu>
+                <a href="index.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+
+       
+        <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        
+        <div class="panel panel-info">
+    
+          <div class="panel-heading">
+            <h3 class="panel-title">Feedback form
+            </h3>
+          </div>
+     
+          <div class="panel-body">
+
+           
+            <form id="contactForm">
+              <div class="row">
+                
+                <div id="error" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
+                
+                      
+                <div class="col-sm-6">
+
+                  <div class="form-group has-feedback">
+                    <label for="name" class="control-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required="required" value="" placeholder="" minlength="2" maxlength="30">
+                    <span class="glyphicon form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+     
+                  <div class="form-group has-feedback">
+                    <label for="email" class="control-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required="required"  value="" placeholder="" maxlength="30">
+                    <span class="glyphicon form-control-feedback"></span>
+                  </div>
+                </div>
+              </div>
+
+           
+              <div class="form-group has-feedback">
+                <label for="message" class="control-label">Mesaj:</label>
+                <textarea id="message" class="form-control" rows="3" placeholder="Enter a message from 20 to 500" minlength="20" maxlength="500" required="required" autocomplete="off"></textarea>
+              </div>
+
+              <hr>
+            	  
+	            <img id="img-captcha" src="captcha.php">
+          
+	            <div id="reload-captcha" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i> Update</div>
+	          
+	            <div class="form-group has-feedback">
+                <label id="label-captcha" for="captcha" class="control-label">Introduceti de pe imagine captcha:</label>
+	              <input id="text-captcha" name="captcha" type="text" class="form-control" required="required" value="" autocomplete="off" minlength="6" maxlength="6">
+	              <span class="glyphicon form-control-feedback"></span>
+              </div>
+
+       
+              <button type="submit" class="btn btn-primary pull-right">Send</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+
+       
+</body>
+
+</html>
